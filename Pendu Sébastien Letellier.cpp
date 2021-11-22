@@ -1,5 +1,6 @@
 //Letellier Sebastien BTS SIO SLAM 2021
-
+//Salut Seb,trop sympa!
+//
 #include <stdio.h>
 #include<stdlib.h>
 #include <time.h>
