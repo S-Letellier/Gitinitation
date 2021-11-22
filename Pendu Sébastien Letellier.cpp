@@ -1,3 +1,5 @@
+//Letellier Sebastien BTS SIO SLAM 2021
+
 #include <stdio.h>
 #include<stdlib.h>
 #include <time.h>
@@ -10,7 +12,7 @@ int gp;
 int nblettre; /// saisis de la variable nblettre
 int GG;
 int erreur;
-char c = 0; /// saisis du caractère c
+char c = 0; /// saisis du caractÃ¨re c
 
 	printf("bienvenue dans le jeu du pendu\n"); /// affichage de la saisis
 	printf("\ncombien de lettre contient votre mot: ");/// affichage de la saisis
@@ -66,21 +68,21 @@ for(i = 0; i<nblettre; i++){
 }
 
 GG=0;
-while(GG==0){     ///crée un boucle tant que le joueur 2 cherche le mot
+while(GG==0){     ///crÃ©e un boucle tant que le joueur 2 cherche le mot
 		printf("\nrentrez une lettre\n");
 
-		mot2[nblettre - 1] = mot1[nblettre - 1]; ///pour que le underscore change et met la lettre à la place
+		mot2[nblettre - 1] = mot1[nblettre - 1]; ///pour que le underscore change et met la lettre Ã  la place
 
 
     getchar();
     scanf("%c",&nbpendu);
-for(i = 0; i<nblettre; i++){    /// vérification de la lettre saisis
+for(i = 0; i<nblettre; i++){    /// vÃ©rification de la lettre saisis
 
 
     if(nbpendu == mot1[i]){    /// teste la lettre saisie et affiche si la lettre est bonne
     	mot2[i] = nbpendu;
     	printf(" C'est bien vous avez trouver la bonne lettre continuez\n");
-    	gp = gp+1;      ///rajouter le faite qu'une lettre a été trouver
+    	gp = gp+1;      ///rajouter le faite qu'une lettre a Ã©tÃ© trouver
     
 }
  	if(i == nblettre-1 && nbpendu != nblettre){  ///teste la lettre saisie et affiche si c'est une erreur
@@ -95,7 +97,7 @@ for(i=0; i<nblettre; i++){    /// afficher le mot avec tiret du bas et nouvelle 
 
 
 }
- if(gp == nblettre-2){     /// si toutes les lettres ont été trouver alors fin du programme
+ if(gp == nblettre-2){     /// si toutes les lettres ont Ã©tÃ© trouver alors fin du programme
  	GG=1;
  }
  
